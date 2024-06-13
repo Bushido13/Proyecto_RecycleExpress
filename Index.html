@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container-fluid" style="font-weight: bold;">
+          <a class="navbar-brand" href="Index.html"><img src="img/logo.png" alt="logo" height="48"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="Index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Quienes_somos.html">Quiénes Somos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Registro.html">Registro</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Cotizador.html">Cotizador</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Preguntas.html">Preguntas Frecuentes</a>
+          </li>
+                
+                </ul>
+                
+                <a id="btn-carrito" class="nav-item btn-iniciar" href="#"><img src="img/carrito.png" height="30"></a>
+                <button type="button" class="btn btn-primary btn-iniciar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Iniciar Sesión
+                </button>
+                
+                
+          </div>
+        </div>
+    </nav>
+
+    
+
+    <style>
+        .carousel-item{
+            height: 48rem;
+            background: #777;
+            color: white;
+            position: relative;
+            background-color: black;
+            margin-bottom: 20px;            
+        }
+        .overlay-image{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            top: 0;
+            background-position: center;
+            background-size: cover;
+            opacity: 0.5;
+        }
+        .container{
+          position: absolute;
+          top: 30%;
+          left: 0;
+          right: 0;
+          color: white;
+          margin: none;
+        }            
+    </style>
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="overlay-image"  style="background-image:url(img/arboles.jpg) ;">            
+            </div>
+            <div class="container">
+              <h1>Ayudanos a salvar al planeta!</h1>
+            <p>En nuestro compromiso incansable por hacer de este mundo un lugar mejor, nos dedicamos completamente a nuestra misión.
+               Nos apasiona la idea de contribuir positivamente a nuestro planeta, y creemos firmemente que cada pequeña acción cuenta.
+               Es por eso que nos hemos propuesto llevar nuestro mensaje y nuestra labor a diversos rincones del mundo</p>
+              <a href="arboles.html" class="btn btn-lg btn-primary" style="position: absolute; right: 10%; background-color: green; border-color: green;">Más información acá</a>
+            </div>
+            
+          </div>
+          <div class="carousel-item ">
+            <div class="overlay-image"  style="background-image:url(img/plasticwater.jpg) ;"></div>
+          </div>
+          <div class="carousel-item ">
+            <div class="overlay-image"  style="background-image:url(img/nuclear.jpg) ;"></div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Iniciar Sesión</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                  <small id="emailHelp" class="form-text text-muted"></small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Ingresar</button>
+              <button type="button" class="btn btn-primary">¿No puedes iniciar sesión?</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Carrito de Compra</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p id="mensajeCarrito">Aquí aparecerán tus retiros programados</p>
+            <ul id="listaRetiros"></ul>
+            <p id="totalCarrito"></p>
+        </div>
+    </div>
+    <div id="carbon-footprint" class="container">
+      <h3>Calidad del Aire en Chile en Tiempo Real</h3>
+      <p id="carbon-footprint-value">Cargando...</p>
+    </div>
+     
+      <footer class="pie-pagina">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+                <img id="logo-pie" src="img/logo.png" alt="logo">
+                <p class="slogan">
+                    "Tu aliado en el reciclaje rápido y sostenible."
+                </p>
+            </div>
+            <div class="col-lg-4 col-md-4 mb-4 mb-md-0">
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <h5>Navegación</h5>
+                    </li>
+                    <li>
+                        <a href="Index.html" class="text-dark">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="Quienes_somos.html" class="text-dark">Quiénes Somos</a>
+                    </li>
+                    <li>
+                        <a href="Registro.html" class="text-dark">Registro</a>
+                    </li>
+                    <li>
+                        <a href="Cotizador.html" class="text-dark">Cotizador</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                <ul class="redes-sociales">
+                    <li>
+                        <h5>Redes Sociales</h5>
+                    </li>
+                    <li class="icon-container">
+                        <a href="https://facebook.com">
+                            <img src="img/facebook.png" alt="Facebook">
+                        </a>
+                        <a href="https://instagram.com">
+                            <img src="img/instagram.png" alt="Instagram">
+                        </a>
+                        <a href="https://whatsapp.com">
+                            <img src="img/whatsapp.png" alt="WhatsApp">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      </div>
+      <div class="footer-line"></div> 
+      <div class="footer-text"> 
+          RECYCLE EXPRESS © 2024
+      </div>
+    </footer>
+     
+          
+      
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="main.js"></script>
+      <script src="carbon.js"></script>
+    </body>
+
+</html>
